@@ -9,19 +9,19 @@ bgp_global:
     bgp:
       log_neighbor_changes: true
       router_id:
-        address: 172.31.33.78
+        address: 10.10.2.151
     neighbors:
     - log_neighbor_changes:
         set: true
-      neighbor_address: 172.31.39.79
+      neighbor_address: 10.10.2.13
       remote_as: '65536'
     - log_neighbor_changes:
         set: true
-      neighbor_address: 172.31.38.157
+      neighbor_address: 10.10.2.35
       remote_as: '65537'
     - log_neighbor_changes:
         set: true
-      neighbor_address: 172.31.40.115
+      neighbor_address: 10.10.2.63
       remote_as: '65538'
 
 bgp_address_family:
@@ -29,11 +29,11 @@ bgp_address_family:
     - afi: ipv4
       neighbor:
       - activate: true
-        address: 172.31.38.157
+        address: 10.10.2.13
       - activate: true
-        address: 172.31.39.79
+        address: 10.10.2.35
       - activate: true
-        address: 172.31.40.115
+        address: 10.10.2.63
       network:
       - address: 192.168.2.0
       - address: 192.168.3.0
