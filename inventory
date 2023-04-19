@@ -1,8 +1,8 @@
 [nodes]
-csrv1.lab
-csrv2.lab
-csrv3.lab
-csrv4.lab
+csrv1.lab ansible_hostname=10.10.2.13
+csrv2.lab ansible_hostname=10.10.2.35
+csrv3.lab ansible_hostname=10.10.2.63
+csrv4.lab ansible_hostname=10.10.2.151
 
 [nodes:vars]
 #ansible_user=ec2-user
